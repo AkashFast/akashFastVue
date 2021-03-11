@@ -11,6 +11,7 @@ import VCharts from 'v-charts'
 import { VueAxios } from './utils/request'
 import ProLayout, { PageHeaderWrapper } from '@ant-design-vue/pro-layout'
 import themePluginConfig from '../config/themePluginConfig'
+import { checkLogin } from '@/api/login'
 import { executeUnify, dataClean, success, exportFile, exportData } from '@/api/manage'
 import { FormModel, Tree, Anchor, TreeSelect, Rate } from 'ant-design-vue'
 import VueClipboard from 'vue-clipboard2'
@@ -31,6 +32,7 @@ Vue.prototype.dataClean = dataClean
 Vue.prototype.success = success
 Vue.prototype.exportFile = exportFile
 Vue.prototype.exportData = exportData
+Vue.prototype.checkLogin = checkLogin
 
 // mount axios to `Vue.$http` and `this.$http`
 Vue.use(VueAxios)
@@ -60,5 +62,8 @@ new Vue({
   i18n,
   // init localstorage, vuex
   created: bootstrap,
+  components: {
+    App
+  },
   render: h => h(App)
 }).$mount('#app')

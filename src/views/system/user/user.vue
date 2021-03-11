@@ -330,7 +330,7 @@ export default {
         }
       ],
       loading: false,
-      systemName: '新东方·北京学校',
+      systemName: 'Fast·Akash',
       checkedListAdmin: ''
     }
   },

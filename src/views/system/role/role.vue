@@ -315,7 +315,7 @@ export default {
         indexData: undefined
       },
       parentNode: [],
-      systemName: '新东方·北京学校',
+      systemName: 'Fast·Akash',
       checkedNode: [],
       indexTree: [],
       indexRoleNode: []

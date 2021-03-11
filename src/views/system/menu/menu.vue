@@ -169,7 +169,7 @@ export default {
         pid: '-1'
       },
       parentNode: [],
-      systemName: '新东方·北京学校',
+      systemName: 'Fast·Akash',
       form: {
         layout: 'inline'
       },

@@ -13,7 +13,7 @@ NProgress.configure({
   showSpinner: false
 }) // NProgress Configuration
 
-const allowList = ['login'] // no redirect allowList
+const allowList = ['login', 'register', 'registerResult', 'recover'] // no redirect allowList
 const loginRoutePath = '/user/login'
 const defaultRoutePath = '/sys_akash/user'
 
@@ -67,7 +67,7 @@ router.beforeEach((to, from, next) => {
               if (err.roleList) {
                 // 如果是多权限
                 if (err.roleList.length > 0) {
-                  router.push('user/checkRole')
+                  router.push('/user/checkRole')
                   NProgress.done()
                 } else {
                   // 失败时，获取用户信息失败时，调用登出，来清空历史保留信息

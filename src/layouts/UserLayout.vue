@@ -4,13 +4,12 @@
       <div class="top">
         <div class="header">
           <a href="/">
-            <img src="~@/assets/xdf_logo2.png" class="logo" alt="logo">
-            <!-- <span class="title">新东方·北京学校</span> -->
+            <img src="~@/assets/logo.png" class="logo" alt="logo">
           </a>
         </div>
         <br>
         <div class="desc">
-          「追求卓越，挑战极限，从绝望中寻找希望，人生终将辉煌！」
+          「基于Spring Boot + Ant Design Vue的快速开发框架」
         </div>
       </div>
       <br><br>
@@ -23,7 +22,7 @@
           <a href="_self">条款</a>
         </div> -->
         <div class="copyright">
-          Copyright &copy; 2021 新东方教育科技集团·北京学校
+          Copyright &copy; 2021 FastAkash
         </div>
       </div>
     </div>

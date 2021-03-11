@@ -14,7 +14,7 @@
  */
 
 export default {
-  url: 'http://localhost:80',
+  url: 'http://yourAddress/fastAkash/',
   accessLogin: false,
   navTheme: 'dark', // theme for nav menu
   primaryColor: '#1890ff', // primary color of ant design

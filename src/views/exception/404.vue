@@ -21,7 +21,7 @@ export default {
       })
     },
     toHome () {
-       this.$router.push({ name: 'examMange' })
+       this.$router.push({ name: 'Analysis' })
     }
   }
 }
