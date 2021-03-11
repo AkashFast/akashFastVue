@@ -1,31 +1,23 @@
-[English](./README.md) | 简体中文
-
-<h1 align="center">Ant Design Vue Pro</h1>
-<div align="center">
-An out-of-box UI solution for enterprise applications as a Vue boilerplate. based on  <a href="https://vuecomponent.github.io/ant-design-vue/docs/vue/introduce-cn/" target="_blank">Ant Design of Vue</a>
-</div>
+<h1 align="center">Fast Akash - Ant Design Vue Pro</h1>
 
 <div align="center">
-
-[![License](https://img.shields.io/npm/l/package.json.svg?style=flat)](https://github.com/vueComponent/ant-design-vue-pro/blob/master/LICENSE)
-[![Release](https://img.shields.io/github/release/vueComponent/ant-design-vue-pro.svg?style=flat)](https://github.com/vueComponent/ant-design-vue-pro/releases/latest)
-[![Travis branch](https://travis-ci.org/vueComponent/ant-design-vue-pro.svg?branch=master)](https://travis-ci.org/vueComponent/ant-design-vue-pro)
-
+基于Ant Design Vue Pro,并契合<a href="https://github.com/AkashFast/fastAkash" target="_blank">「Fast Akash Java Web」</a>的前端开发脚手架.</a>
 </div>
 
-- 预览: https://preview.pro.antdv.com
-- 首页: https://pro.antdv.com
-- 文档: https://pro.antdv.com/docs/getting-started
-- 更新日志: https://pro.antdv.com/docs/changelog
-- 常见问题: https://pro.antdv.com/docs/faq
-
+<br/> 
+<br/> 
+<br/>
+ 
+- 首页: 搭建中
+- Ant Design组件文档:  [Ant Design Pro组件文档](https://www.antdv.com/docs/vue/introduce-cn/) 
 
 Overview
 ----
 
-基于 [Ant Design of Vue](https://vuecomponent.github.io/ant-design-vue/docs/vue/introduce-cn/) 实现的 [Ant Design Pro](https://pro.ant.design/) 
+基于[Ant Design Pro](https://pro.ant.design/) 实现的 [Fast Akash - Ant Design Pro](https://) 
 
-![dashboard](https://static-2.loacg.com/open/static/github/SP1.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210311162030107.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3MDQ3MjE1,size_16,color_FFFFFF,t_70#pic_center)
+
 
 环境和依赖
 ----
@@ -49,8 +41,8 @@ Overview
 
 - 拉取项目代码
 ```bash
-git clone https://github.com/vueComponent/ant-design-vue-pro.git
-cd ant-design-vue-pro
+git clone https://github.com/AkashFast/akashFastVue
+cd  akashFastVue
 ```
 
 - 安装依赖
@@ -74,36 +66,24 @@ yarn run lint
 ```
 
 
-
 其他说明
-----
+---
 
-- **关于 Issue 反馈 (重要!重要!重要!) 请在开 *Issue* 前，先阅读该内容：[Issue / PR 编写建议](https://github.com/vueComponent/ant-design-vue-pro/issues/90)** 
+-  若需使用项目「系统管理」及其子级菜单功能，请先`clone`并`启动` - [fastAkash for Java](https://github.com/AkashFast/fastAkash) 「当然，您可以可以自行实现相关接口」
 
-- 项目使用的 [vue-cli3](https://cli.vuejs.org/guide/), 请确保你所使用的 vue-cli 是新版，并且已经学习 cli 官方文档使用教程
+-  项目使用的 [vue-cli3](https://cli.vuejs.org/guide/), 请确保你所使用的 vue-cli 是新版，并且已经学习 cli 官方文档使用教程
 
-- 关闭 Eslint (不推荐) 移除 `package.json` 中 `eslintConfig` 整个节点代码, `vue.config.js` 下的 `lintOnSave` 值改为 `false`
+-  您可在 [Ant Design Vue Pro](https://pro.antdv.com/docs/getting-started)深入学习本脚手架的基础知识
+
+
+- 关闭 Eslint (`不推荐`) 移除 `package.json` 中 `eslintConfig` 整个节点代码, `vue.config.js` 下的 `lintOnSave` 值改为 `false`
 
 - 组件按需加载 `/src/main.js` L14 相关代码 `import './core/lazy_use'` / `import './core/use'` 
-
-- [修改 Ant Design 配色 (@kokoroli)](https://github.com/kokoroli/antd-awesome/blob/master/docs/Ant_Design_%E6%A0%B7%E5%BC%8F%E8%A6%86%E7%9B%96.md)
-
-- I18n: [多语言支持 (@musnow)](./src/locales/index.js)
-
-- 生成环境默认不加载 `mock`，更多详情请看 `src/mock/index.js`
-
-- **用于生产环境，请使用 `release` 版本代码，使用 master 代码出现的任何问题需要你自行解决**
 
 ## 浏览器兼容
 
 Modern browsers and IE10.
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera |
+| </br>IE / Edge | Firefox | Chrome |Safari |Opera |
 | --- | --- | --- | --- | --- |
 | IE10, Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
-
-
-## Contributors
-
-This project exists thanks to all the people who contribute. 
-<a href="https://github.com/vueComponent/ant-design-vue-pro/graphs/contributors"><img src="https://opencollective.com/ant-design-pro-vue/contributors.svg?width=890&button=false" /></a>
