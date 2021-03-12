@@ -139,7 +139,7 @@ export default {
     toLogin () {
      this.checkLogin('admin', '').then(res => {
        if (res) {
-         this.$router.push('/user/checkRole')
+         this.$router.push({ name: 'checkRole' })
        }
      })
     },

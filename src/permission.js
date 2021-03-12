@@ -28,8 +28,10 @@ router.beforeEach((to, from, next) => {
           path: defaultRoutePath
         })
         NProgress.done()
-      } else if (to.path === '/user/checkRole') {
-        next()
+      } else if (to.name === 'checkRole') {
+        next({
+          path: '/user/checkRole'
+        })
         NProgress.done()
       } else if (allowList.includes(to.name)) {
         // 在免登录名单，直接进入
@@ -46,6 +48,7 @@ router.beforeEach((to, from, next) => {
               store.dispatch('GenerateRoutes', { roles }, router).then(() => {
                 // 根据roles权限生成可访问的路由表
                 // 动态添加可访问路由表
+                console.log('GenerateRoutes')
                 router.addRoutes(store.getters.addRouters)
                 // 请求带有 redirect 重定向时，登录自动重定向到该地址
                 const redirect = decodeURIComponent(from.query.redirect || to.path)
@@ -67,7 +70,7 @@ router.beforeEach((to, from, next) => {
               if (err.roleList) {
                 // 如果是多权限
                 if (err.roleList.length > 0) {
-                  router.push('/user/checkRole')
+                  router.push({ name: 'checkRole' })
                   NProgress.done()
                 } else {
                   // 失败时，获取用户信息失败时，调用登出，来清空历史保留信息
@@ -116,7 +119,8 @@ router.beforeEach((to, from, next) => {
           store
             .dispatch('LoginAccess')
             .then(res => {
-              router.push('user/checkRole')
+              next()
+              // router.push('/user/checkRole')
             })
             .catch(() => {
              next({
