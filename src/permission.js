@@ -120,7 +120,6 @@ router.beforeEach((to, from, next) => {
             .dispatch('LoginAccess')
             .then(res => {
               next()
-              // router.push('/user/checkRole')
             })
             .catch(() => {
              next({
